@@ -1,0 +1,10 @@
+.margin-top {
+	margin-top: 20px;
+}
+
+.list {
+	padding-inline-start: 0;
+	list-style: none;
+	font-weight: bold;
+}
+
