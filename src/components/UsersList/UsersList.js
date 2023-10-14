@@ -6,7 +6,11 @@ const UsersList = props => {
 		<Card className={styles['margin-top']}>
 			<ul className={styles.list}>
 				{props.users.map(user => (
-					<UsersListItem username={user.username} age={user.age} />
+					<UsersListItem
+						username={user.username}
+						age={user.age}
+						key={(Math.random() * 100 - Math.random()).toString()}
+					/>
 				))}
 			</ul>
 		</Card>

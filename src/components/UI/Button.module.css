@@ -6,6 +6,7 @@
 	cursor: pointer;
 	transition: background-color 0.3s;
 	width: fit-content;
+	border-radius: 5px;
 }
 
 .button:hover {
@@ -14,7 +15,8 @@
 
 @media (min-width: 768px) {
 	.button {
-		width: auto;
-		max-width: 300px;
+		width: clamp(100px, 100%, 150px);
+		padding: 10px 20px;
+		font-size: 16px;
 	}
 }

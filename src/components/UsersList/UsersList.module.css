@@ -3,8 +3,18 @@
 }
 
 .list {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	width: 100%;
 	padding-inline-start: 0;
 	list-style: none;
 	font-weight: bold;
 }
 
+@media (min-width: 768px) {
+	.list {
+		width: 60vw;
+		max-width: 600px;
+	}
+}
